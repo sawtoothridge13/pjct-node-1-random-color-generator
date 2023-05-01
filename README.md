@@ -1,35 +1,44 @@
 # Node.js Random Color Generator
 
-Generate a random color
+A ransom color generator CLI app that will be able to generate completely random colors:
 
 ```bash
-When a user enters node index.js in the command line, a block of approximately 31x9 # //characters colored with a random color (using hex code, e.g. #ff0000) should be generated.
+$ node index.js
+###############################
+###############################
+###############################
+#####                     #####
+#####       #ff0201       #####
+#####                     #####
+###############################
+###############################
+###############################
 ```
 
-````bash
-TO DO
-```
-
+Or random colors based on input:
 
 ```bash
-TO DO
-````
+$ node index.js
+###############################
+###############################
+###############################
+#####                     #####
+#####       #ff0200       #####
+#####                     #####
+###############################
+###############################
+###############################
+```
 
 ## TODO
 
-- [ ] Command line cheatsheet steps (setup for Node.js project)
-- [ ] Set up a `.gitignore` with the `memes` folder
-- [ ] Create a folder called `"memes"`
-- [ ] Access the website (send a request to the website / "fetching")
-- [ ] Search for the `section` in the string of HTML that comes back (in the "response") from the website
-- [ ] Search for the first 10 image sources in the `section`
-  - [ ] Two options
-    - [ ] One option: `.jpg` - this is in the HTML code of the website
-    - [ ] Another option: `<img`
-  - [ ] Get the `src` URL strings from the `img`
-- [ ] Add the first 10 image URL strings to an array
-- [ ] Loop over the first 10 image URLs and:
-  - [ ] Create a file (named correctly) in the `memes` folder (eg. `01.jpg`, `02.jpg`, etc)
-  - [ ] Access the image URL
-  - [ ] In this file, store the image data that comes back (in the "response") from the website
-- [ ] Test to make sure the program can run multiple times without failing
+- [x] Create a GitHub repo
+- [x] Clone the GitHub repo
+- [x] Set up `package.json`
+- [x] Set up the ESLint config
+- [x] Create `index.js`
+  - [x] Create a 31x9 hash pattern
+  - [x] Generate a random color (hex code)
+  - [x] Paint the pattern with the color
+  - [x] Accept input from the user for hue
+  - [x] Accept input from the user for luminosity
